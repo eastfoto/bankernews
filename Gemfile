@@ -9,6 +9,9 @@ gem "rake", "10.0.3"
 
 # gem "mysql2", :git => "git://github.com/brianmario/mysql2.git"
 
+# setup pg database
+# gem 'pg'
+
 gem "bcrypt-ruby", "3.0.0"
 
 gem "jquery-rails"
@@ -28,7 +31,7 @@ gem "rdiscount"
 
 gem "oauth"
 
-gem "thinking-sphinx", "2.0.12"
+gem 'thinking-sphinx', "2.0.12"
 
 gem "mail"
 
@@ -36,4 +39,6 @@ group :test, :development do
   gem "rspec-rails", "~> 2.6"
   gem "machinist"
   gem "sqlite3"
+  
 end
+

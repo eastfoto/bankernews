@@ -39,7 +39,7 @@ GEM
     execjs (2.0.2)
     hike (1.2.3)
     htmlentities (4.3.1)
-    i18n (0.6.8)
+    i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
@@ -112,7 +112,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.2)
+    uglifier (2.3.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicorn (4.7.0)

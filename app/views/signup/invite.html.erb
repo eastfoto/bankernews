@@ -1,12 +1,12 @@
 <div class="box wide">
   <div class="legend">
-    Pass Along an Invitation
+    传递一份邀请
   </div>
 
   <p>
-  This community can only grow when members invite new users, just as
-  <strong><%= @user.invited_by_user.try(:username) %></strong> invited you.
-  Take a moment and invite someone you know.
+  我们的网站只有用户之间的邀请才会逐渐成长，就像
+  <strong><%= @user.invited_by_user.try(:username) %></strong>邀请你来加入一样。
+  随便看看，并邀请你认识的朋友进来吧。
   </p>
 
   <%= render :partial => "users/invitationform",
@@ -15,6 +15,6 @@
   or
 
   <p>
-  <%= button_to "Skip", "/" %>
+  <%= button_to "跳过", "/" %>
   </p>
 </div>

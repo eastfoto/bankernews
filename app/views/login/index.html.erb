@@ -1,33 +1,30 @@
 <div class="box wide">
   <div class="legend">
-    Login
+    登录
   </div>
 
   <%= form_tag login_url do %>
   <p>
-    <%= label_tag :email, "E-mail or Username:" %>
+    <%= label_tag :email, "E-mail或用户名:" %>
     <%= text_field_tag :email, "", :size => 30, :autofocus => "autofocus" %>
     <br />
 
-    <%= label_tag :password, "Password:" %>
+    <%= label_tag :password, "密码:" %>
     <%= password_field_tag :password, "", :size => 30 %>
     <br />
     </p>
 
     <p>
-    <%= submit_tag "Login" %>
+    <%= submit_tag "登录" %>
     </p>
 
     <p>
-    Forgot your password? <%= link_to "Reset your password",
+    Forgot your password? <%= link_to "忘记密码",
       forgot_password_url %>.
     </p>
 
     <p>
-    Not a user yet?  Signup is by invitation only to combat spam and increase
-    accountability.  If you know <a href="/u/">a current user</a> of the site,
-    ask them for an invitation or <a href="/invitations/request">request one
-    publicly</a>.
+    还未成为用户？目前注册用户仅为邀请制，这样能够更好的保证内容质量。如果你认识<a href="/u/">这里的人</a>，让他们来邀请你。或者<a href="/invitations/request">申请测试账号</a>.
     </p>
   <% end %>
 </div>

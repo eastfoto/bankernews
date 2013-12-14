@@ -1,27 +1,24 @@
 <div class="box wide">
   <div class="legend">
-		Filtered Tags
+		过滤话题
 	</div>
 
   <p>
-  To hide stories from the home page that have been tagged with certain tags,
-  check them below.
+  如果你不想在首页中看到下列话题，请在下列话题中选择隐藏。
   </p>
 
   <% if !@user %>
     <p>
-    Since you are not logged in, your filters will be stored in a long-lasting
-    browser cookie.  To permanently store your tag filters and have them work
-    across browsers, <a href="/login">login</a> to your account.
+    由于你没有登录，这些过滤的话题只能保存在浏览器的cookie中。如果你想保存你的设置，在不同电脑和浏览器中使用，请<a href="/login">登录</a>你的账户。
     </p>
   <% end %>
 
   <%= form_tag "/filters", :method => :post do %>
     <table class="data zebra" cellspacing=0 width="75%">
     <tr>
-      <th width="7%">Hide</th>
-      <th width="15%">Tag</th>
-      <th width="78%">Description</th>
+      <th width="7%">隐藏</th>
+      <th width="15%">话题</th>
+      <th width="78%">详情描述</th>
     </tr>
     <% Tag.order(:tag).accessible_to(@user).each do |tag| %>
       <tr>
@@ -38,7 +35,7 @@
     <% end %>
     </table>
     <p>
-    <%= submit_tag "Save Filters" %>
+    <%= submit_tag "保存" %>
     </p>
   <% end %>
 </div>

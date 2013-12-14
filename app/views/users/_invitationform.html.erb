@@ -1,8 +1,5 @@
 <p>
-Invitations are unlimited, but persons you invite will be associated with your
-account in the <a href="/u">user tree</a> and you may be responsible for them
-if they cause problems.  Please use your discretion when inviting persons you
-don't personally know.
+我们对邀请的数量没有限制，但是你邀请来的用户能够在<a href="/u">用户列表</a>中看到，同时你也需要为邀请来的用户负责。对于不认识的人请谨慎邀请。
 </p>
 
 <%= form_tag "/invitations", :method => :post do |f| %>
@@ -11,18 +8,18 @@ don't personally know.
   <% end %>
 
   <div class="boxline">
-    <%= label_tag :email, "E-mail Address:", :class => "required" %>
+    <%= label_tag :email, "E-mail:", :class => "required" %>
     <%= text_field_tag :email, "", :size => 30 %>
   </div>
 
   <div class="boxline">
-    <%= label_tag :memo, "Memo to User:", :class => "required" %>
+    <%= label_tag :memo, "留言:", :class => "required" %>
     <%= text_field_tag :memo, "", :size => 60 %>
   </div>
 
   <div class="boxline">
     <p></p>
-    <%= submit_tag "Send Invitation" %>
+    <%= submit_tag "发送邀请" %>
   </div>
 <% end %>
 
