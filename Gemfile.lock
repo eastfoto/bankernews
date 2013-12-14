@@ -1,9 +1,3 @@
-GIT
-  remote: git://github.com/brianmario/mysql2.git
-  revision: a9787cbb88f18d12f0b5c370c519d077ad68c862
-  specs:
-    mysql2 (0.3.14)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -137,7 +131,6 @@ DEPENDENCIES
   jquery-rails
   machinist
   mail
-  mysql2!
   nokogiri
   oauth
   rails (= 3.2.16)
