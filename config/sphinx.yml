@@ -1,9 +1,7 @@
 production:
   address: 127.0.0.1
-  port: 5432
+  port: 9313
   min_infix_len: 2
 
 development:
-  address: 127.0.0.1
-  port: 5432
   min_infix_len: 2

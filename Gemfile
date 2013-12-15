@@ -8,6 +8,7 @@ gem "rake", "10.0.3"
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
 # gem "mysql2", :git => "git://github.com/brianmario/mysql2.git"
+gem 'mysql2'
 
 # setup pg database
 # gem 'pg'
